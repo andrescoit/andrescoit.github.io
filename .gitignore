@@ -1,3 +1,8 @@
 /content
 /templates
-/static
+/data
+/sass
+/themes
+/config.toml
+/theme.toml
+/screenshot.png
