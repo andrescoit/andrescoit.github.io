@@ -1,33 +1,15 @@
+{% set data = load_data(path="@/languages.toml") -%}
 <section class="resume-section bg-[var(--card)] p-6 rounded-lg shadow-sm">
     <h2 class="text-xl font-bold mb-4 border-b pb-2 border-[var(--primary)]">Languages</h2>
-    
+    {% for _ in data.items %}
     <div class="mb-3">
         <div class="flex justify-between text-sm mb-1">
-            <span>English</span>
-            <span>Native</span>
+            <span>{{_.language}}</span>
+            <span>{{_.level}}</span>
         </div>
         <div class="skill-bar bg-gray-200">
-            <div class="progress bg-[var(--primary)]" style="width: 100%"></div>
+            <div class="progress bg-[var(--primary)]" style="width: {{_.percent}}"></div>
         </div>
     </div>
-    
-    <div class="mb-3">
-        <div class="flex justify-between text-sm mb-1">
-            <span>Spanish</span>
-            <span>Professional</span>
-        </div>
-        <div class="skill-bar bg-gray-200">
-            <div class="progress bg-[var(--primary)]" style="width: 80%"></div>
-        </div>
-    </div>
-    
-    <div>
-        <div class="flex justify-between text-sm mb-1">
-            <span>French</span>
-            <span>Intermediate</span>
-        </div>
-        <div class="skill-bar bg-gray-200">
-            <div class="progress bg-[var(--primary)]" style="width: 60%"></div>
-        </div>
-    </div>
+    {% endfor %}
 </section>

@@ -1,7 +1,7 @@
 # The URL the site will be built for
-title = "BelResumé"            # Your site name
-description = "John Doe | Senior Software Engineer"  # Shown in meta and hero
-base_url = "https://yourdomain.com"
+title = "Resume"            # Your site name
+description = "Andres Coit | IT & Engineering Professional"
+base_url = "https://andrescoit.github.io/Resume"
 
 # Use base_url present below if deploying using GitHub Pages
 # base_url = "https://yourusername.github.io/BelResume"
@@ -19,3 +19,4 @@ highlight_code = false
 
 [extra]
 # Put all your custom variables here
+name = "andrescoit"

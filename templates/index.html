@@ -35,11 +35,11 @@
 
             <!-- Left Column -->
             <div class="lg:col-span-2 space-y-8">
-                <!-- Experience -->
-                {% include "partials/experience.html" %}
-
                 <!-- Education -->
                 {% include "partials/education.html" %}
+
+                <!-- Experience -->
+                {% include "partials/experience.html" %}
 
                 <!-- Projects -->
                 {% include "partials/projects.html" %}
@@ -47,24 +47,24 @@
             <!-- Right Column -->
             <div class="space-y-8">
                 <!-- Skills -->
-                 <!-- adjust width if you want to increase skills percentage -->
-                 {% include "partials/skills.html" %}
-
                 <!-- Certifications -->
                 {% include "partials/certifications.html" %}
+
+                <!-- adjust width if you want to increase skills percentage -->
+                {% include "partials/skills.html" %}
 
                 <!-- Languages -->
                 {% include "partials/languages.html" %}
                 
-                <!-- Awards -->
-                {% include "partials/awards.html" %}
+                <!-- Awards(not right now) -->
+                <!-- {% include "partials/awards.html" %} -->
             </div>
             
         </div>
 
         <!-- Footer -->
         <footer class="mt-8 text-center text-xs opacity-70">
-            <p>&copy; 2025 {{ config.title }}. All rights reserved.</p>
+            <p>Built with <a class="hover:underline" href="https://www.getzola.org">Zola static site generator</a>. Forked from <a class="hover:underline" href="https://github.com/cx48/BelResume">https://github.com/cx48/BelResume</a></p>
         </footer>
 
     </div>
